@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <script>
+
       const products = [
         { id: 1, name: "P1", price: 25 },
         { id: 2, name: "P2", price: 45 },
@@ -70,20 +64,3 @@
         });
         divProducts.innerHTML = str;
       };
-    </script>
-  </head>
-  <body onload="showProducts()">
-    <h1>My Store</h1>
-    <h4 onclick="displayCart()">Cart:<span id="items"></span></h4>
-    <hr />
-    <h3>Products</h3>
-    <div id="divProducts"></div>
-
-    <div id="divCartBlock" style="display: none">
-      <h3>My Cart</h3>
-      <div id="divCart"></div>
-      <div id="divTotal"></div>
-      <button onclick="hideCart()">Close</button>
-    </div>
-  </body>
-</html>
